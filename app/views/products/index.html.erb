@@ -1,9 +1,13 @@
 <h1>All Products</h1>
-
-<% @products.each do |product| %>
-  <p>
-    Product: <%= link_to product.title, product %> -
-    $<%= product.price %> -
-    in stock: <%= product.stock_quantity %>
-  </p>
+<% @categories.each do |category| %>
+  <% @products.each do |product| %>
+    <% if category.id == product.category_id %>
+      <p>
+        Product: <%= link_to product.title, product %> -
+        $<%= product.price %> -
+        in stock: <%= product.stock_quantity %> -
+        Category: <%= category.name %>
+      </p>
+    <% end %>
+  <% end %>
 <% end %>
