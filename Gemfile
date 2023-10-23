@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# Add the "faker" gem to your project Gemfile. !!! NEEDED TO CHANGE TO MAIN BRANCH !!!
+gem 'faker', :git => 'https://github.com/faker-ruby/faker', :branch => 'main'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
 

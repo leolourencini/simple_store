@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker
+  revision: 7cf0bbb99cb843fec5a0eb6d0115dfaf0b0aa6a9
+  branch: main
+  specs:
+    faker (3.2.1)
+      i18n (>= 1.8.11, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -216,6 +224,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faker!
   importmap-rails
   jbuilder
   puma (~> 5.0)
