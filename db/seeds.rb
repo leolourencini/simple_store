@@ -18,5 +18,5 @@ for prod in 1..676 do
     price: Faker::Commerce.price,
     stock_quantity: Faker::Number.within(range: 1..1000)
   )
-  prod.save
+  #prod.save
 end
