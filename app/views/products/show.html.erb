@@ -1,0 +1,6 @@
+<h1><%= @product.title %></h1>
+<h2>$<%= @product.price %></h2>
+<p>in stock: <%= @product.stock_quantity %></p>
+<p><i>### <%= @product.description %> ###</i></p>
+
+<p><%= link_to "Back to all products", products_path %></p>

@@ -9,12 +9,10 @@ require "faker"
 
 Product.destroy_all
 
-# product = Product.create(title: "name", price: 10, stock_quantity: 10)
-# product.save
-
 for prod in 1..676 do
   prod = Product.create(
     title: Faker::Commerce.product_name,
+    description: "Best product of the world!",
     price: Faker::Commerce.price,
     stock_quantity: Faker::Number.within(range: 1..1000)
   )
